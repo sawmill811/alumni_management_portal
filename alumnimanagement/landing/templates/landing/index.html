@@ -1,0 +1,18 @@
+{% extends "landing/base.html" %} {% block content %}
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-10 col-sm-12 text-center">
+      <h1 class="display-3">Alumni Connect, CSE IIT Jodhpur</h1>
+      <p class="mt-3 lead">
+        Connect with your batchmates and alumni of CSE department at IIT Jodhpur! Share your experiences through posts, view others' posts, experiences and much more!
+      </p>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="{% url 'account_login' %}" class="btn btn-light mr-2"
+          >Log In</a
+        >
+        <!-- <a href="{% url 'account_signup' %}" class="btn btn-dark">Register</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
